@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Day03GearRatios.cpp">
+    <ClCompile Include="Day03GearRatios1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

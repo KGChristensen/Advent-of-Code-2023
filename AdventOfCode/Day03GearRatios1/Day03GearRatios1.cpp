@@ -1,4 +1,4 @@
-// Day03GearRatios.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// Day03GearRatios1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #if defined(__GNUC__) ||defined(__clang__)

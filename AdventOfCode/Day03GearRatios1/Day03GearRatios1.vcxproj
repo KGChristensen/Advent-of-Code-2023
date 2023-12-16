@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{0816dbed-835a-406c-b7f7-b04495708cce}</ProjectGuid>
-    <RootNamespace>Day03GearRatios</RootNamespace>
+    <ProjectGuid>{042C1775-C80B-4D0E-8B09-87C4290326A9}</ProjectGuid>
+    <RootNamespace>Day03GearRatios1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Day03GearRatios1</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -138,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Day03GearRatios.cpp" />
+    <ClCompile Include="Day03GearRatios1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
