@@ -15,6 +15,20 @@
 #include <chrono>
 #include <queue>
 
+constexpr static bool adjacent2ASymbol(const std::string chrline) {
+
+	if (chrline.empty())
+		return false;
+
+	bool hit = false;
+
+	for (auto chr : chrline) {
+		if (chr != '.' && (chr < '0' || chr > '9'))
+			hit = true;
+	}
+	return hit;
+}
+
 int main()
 {
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
@@ -33,91 +47,53 @@ int main()
 
 	while (std::getline(inputfile, line)) {
 
-
 		allengineschematic.push_back(line + ".");
-
-
-		//int line_len = line.length();
-		//std::string number = "";
-		//int idx_inner = 0;
-		//for (auto chr : line) {
-		//	
-		//	if (chr >= '0' && chr <= '9') {
-		//		number += chr;
-		//	}
-		//	else if (chr != '.') {
-		//		//std::cout << chr << "\n";
-		//	} else {
-		//		// reset number
-
-		//		std::cout << number << "\n";
-
-
-
-		//		number = "";
-		//		
-		//	}
-		//	idx_inner++;
-		//}
-
 
 	}
 
-	for (size_t idx_outer = 0; idx_outer < allengineschematic.size(); idx_outer++) {
-		//std::cout << allengineschematic[idx_outer] << "\n";
+	const size_t schematicrows = allengineschematic.size();
+	const size_t schematiccols = allengineschematic[0].length();
 
-		std::string number = "";
-		size_t idx_inner = 0;
-		for (auto chr : allengineschematic[idx_outer]) {
-			//std::cout << idx_inner << "=" << allengineschematic[idx_outer].length() << " - " << number << "\n";
-			if (chr >= '0' && chr <= '9') {
-				number += chr;
+	for (size_t idx_outer = 0; idx_outer < schematicrows; idx_outer++) {
+		for (size_t idx_inner = 0; idx_inner < schematiccols; idx_inner++) {
+			char chr = allengineschematic[idx_outer][idx_inner];
+
+			if (chr < '0' || chr > '9') {
+				continue;
+			}
+
+			std::string number = { chr };
+
+			while (++idx_inner < schematiccols) {
+				chr = allengineschematic[idx_outer][idx_inner];
+				if (chr >= '0' && chr <= '9') {
+					number += chr;
+				}
+				else {
+					break;
+				}
 
 			}
 
-			if (number.length() > 0 && ((chr < '0' || chr > '9') || (idx_inner == allengineschematic[idx_outer].length() - 1))) {
-				// reset number
+			// Vertical (top to bottom)
+			size_t startVerIdx = (idx_outer == 0 ? 0 : idx_outer - 1);
+			size_t endVerIdx = (idx_outer == schematicrows - 1 ? idx_outer : idx_outer + 1);
 
-				//std::cout << number; // << "\n";
+			// Horizontal (left to right)
+			size_t startHozIdx = (idx_inner - number.length()) == 0 ? 0 : (idx_inner - number.length() - 1); //std::max(0, idx_inner - number.length() - 1));
+			size_t endHozIdx = (idx_inner+1 == schematiccols) ? idx_inner : idx_inner + 1;
 
-				// Check boundaries
+			//std::cout << number << "(row: " << idx_outer << ", cols: " << idx_inner << ")\n";
 
-				// Vertical (top to bottom)
-				size_t startVerIdx = (idx_outer == 0 ? 0 : idx_outer - 1);
-				size_t endVerIdx = (idx_outer == allengineschematic.size() - 1 ? idx_outer : idx_outer + 1);
+			std::string top = (idx_outer == startVerIdx) ? "" : allengineschematic[startVerIdx].substr(startHozIdx, endHozIdx - startHozIdx);
+			std::string bottom = (idx_outer == endVerIdx) ? "" : allengineschematic[endVerIdx].substr(startHozIdx, endHozIdx - startHozIdx);
+			std::string left = (idx_inner - number.length()) == 0 ? "" : allengineschematic[idx_outer].substr(startHozIdx, 1);
+			std::string right = (idx_inner+1 == allengineschematic[idx_outer].length()) ? "" : allengineschematic[idx_outer].substr(endHozIdx-1, 1);
 
-				// Horizontal (left to right)
-				size_t startHozIdx = (idx_inner - number.length()) == 0 ? 0 : (idx_inner - number.length() - 1); //std::max(0, idx_inner - number.length() - 1));
-				size_t endHozIdx = (idx_inner == allengineschematic[idx_outer].length()) ? idx_inner : idx_inner + 1;
-
-
-				bool adjacent_to_a_symbol = false;
-				for (size_t vIdx = startVerIdx; vIdx <= endVerIdx; vIdx++) {
-					std::string l = allengineschematic[vIdx];
-					for (size_t hIdx = startHozIdx; hIdx < endHozIdx; hIdx++) {
-						if (l[hIdx] != '.' && (l[hIdx] < '0' || l[hIdx] > '9')) {
-							if (number.size() > 0) {
-								//								std::cout << "|" << number << "|";
-								//								std::cout << "\n";
-
-								adjacent_to_a_symbol = true;
-
-							}
-						}
-					}
-				}
-
-				if (adjacent_to_a_symbol) {
-					sum_of_all_of_the_part_numbers += stoi(number);
-				}
-
-				number = "";
+			if (adjacent2ASymbol(top) || adjacent2ASymbol(bottom) || adjacent2ASymbol(left) || adjacent2ASymbol(right)) {
+				sum_of_all_of_the_part_numbers += stoi(number);
 			}
-
-			//std::cout << idx_inner << "=" << allengineschematic[idx_outer].length() << "\n";
-			idx_inner++;
 		}
-
 	}
 
 	std::cout << "Sum of all of the part numbers: " << sum_of_all_of_the_part_numbers << "\n";
