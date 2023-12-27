@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d873cb02-d18e-4850-8a4c-4da1fe0aec88}</ProjectGuid>
-    <RootNamespace>Day04Scratchcards02</RootNamespace>
+    <ProjectGuid>{9680f341-453b-4f39-b174-2ae3f09c14a5}</ProjectGuid>
+    <RootNamespace>Day05IfYouGiveASeedAFertilizer1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -138,7 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Day04Scratchcards02.cpp" />
+    <ClCompile Include="Day05IfYouGiveASeedAFertilizer1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />
