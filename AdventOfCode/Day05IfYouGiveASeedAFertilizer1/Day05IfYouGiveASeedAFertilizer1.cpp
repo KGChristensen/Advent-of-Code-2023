@@ -24,14 +24,65 @@ int main()
 	auto start = std::chrono::high_resolution_clock::now();
 
 	std::string line;
+	std::vector<unsigned long int> allSeeds;
+	std::vector<std::vector<unsigned long int>> maps;
 
 	std::ifstream inputfile("input.txt");
 
 	if (!inputfile.is_open()) { std::cerr << "Cannot open file!\n"; return 0; }
 
+	std::getline(inputfile, line);
+
+	std::stringstream seeds(line.substr(7, line.length() - 7));
+	std::string seed;
+
+	while (seeds >> seed) {
+		allSeeds.push_back(std::strtoul(seed.c_str(), nullptr, 0));
+	}
+
+	std::getline(inputfile, line);
+
 	while (std::getline(inputfile, line)) {
 
+		if (line[0] > 'a' && line[0] < 'z') {
+
+			maps.push_back(std::vector<unsigned long int>());
+			while (std::getline(inputfile, line) && (line[0] >= '0' && line[0] <= '9')) {
+
+				std::stringstream values(line);
+				std::string value;
+				while (values >> value) {
+					maps[maps.size() - 1].push_back(std::strtoul(value.c_str(), nullptr, 0));
+				}
+			}
+			// Finished parsing map
+
+			for (size_t seedIdx = 0; seedIdx < allSeeds.size(); seedIdx++) {
+				
+				unsigned long int curSeed = allSeeds[seedIdx];
+
+				size_t curMapSize = maps[maps.size() - 1].size();
+				bool changed = false;
+				for (size_t idx = 0; (idx < curMapSize) && !changed; idx += 3) {
+					unsigned long int endRange = maps[maps.size() - 1][idx];
+					unsigned long int startRange = maps[maps.size() - 1][idx + 1];
+					unsigned long int range = maps[maps.size() - 1][idx + 2];
+
+					if (curSeed >= startRange && curSeed <= (startRange + range)) {
+
+						allSeeds[seedIdx] = endRange - startRange + curSeed;
+						changed = true;
+					}
+
+				}
+
+			}
+
+		}
+
 	}
+
+	std::cout << "Lowest location number: " << *std::min_element(allSeeds.begin(), allSeeds.end()) << "\n";
 
 	inputfile.close();
 
