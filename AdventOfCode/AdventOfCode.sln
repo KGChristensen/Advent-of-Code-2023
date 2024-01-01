@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day04Scratchcards02", "Day0
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day05IfYouGiveASeedAFertilizer1", "Day05IfYouGiveASeedAFertilizer1\Day05IfYouGiveASeedAFertilizer1.vcxproj", "{9680F341-453B-4F39-B174-2AE3F09C14A5}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day05IfYouGiveASeedAFertilizer2", "Day05IfYouGiveASeedAFertilizer2\Day05IfYouGiveASeedAFertilizer2.vcxproj", "{52ACA59D-00BD-4848-8835-798FC2103DAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{9680F341-453B-4F39-B174-2AE3F09C14A5}.Release|x64.Build.0 = Release|x64
 		{9680F341-453B-4F39-B174-2AE3F09C14A5}.Release|x86.ActiveCfg = Release|Win32
 		{9680F341-453B-4F39-B174-2AE3F09C14A5}.Release|x86.Build.0 = Release|Win32
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Debug|x64.ActiveCfg = Debug|x64
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Debug|x64.Build.0 = Debug|x64
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Debug|x86.ActiveCfg = Debug|Win32
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Debug|x86.Build.0 = Debug|Win32
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x64.ActiveCfg = Release|x64
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x64.Build.0 = Release|x64
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x86.ActiveCfg = Release|Win32
+		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
