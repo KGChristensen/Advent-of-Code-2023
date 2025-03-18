@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day05IfYouGiveASeedAFertili
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day05IfYouGiveASeedAFertilizer2", "Day05IfYouGiveASeedAFertilizer2\Day05IfYouGiveASeedAFertilizer2.vcxproj", "{52ACA59D-00BD-4848-8835-798FC2103DAE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day06WaitForIt1", "Day06WaitForIt1\Day06WaitForIt1.vcxproj", "{2BB66B05-D991-4FE2-94A6-03255129105F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x64.Build.0 = Release|x64
 		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x86.ActiveCfg = Release|Win32
 		{52ACA59D-00BD-4848-8835-798FC2103DAE}.Release|x86.Build.0 = Release|Win32
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Debug|x64.ActiveCfg = Debug|x64
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Debug|x64.Build.0 = Debug|x64
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Debug|x86.ActiveCfg = Debug|Win32
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Debug|x86.Build.0 = Debug|Win32
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Release|x64.ActiveCfg = Release|x64
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Release|x64.Build.0 = Release|x64
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Release|x86.ActiveCfg = Release|Win32
+		{2BB66B05-D991-4FE2-94A6-03255129105F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
