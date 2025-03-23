@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{21a104c4-a926-4c7e-bc6d-da472023fe79}</ProjectGuid>
-    <RootNamespace>Day7CamelCards2</RootNamespace>
+    <ProjectGuid>{66cbc03d-97f6-4217-a75d-c9532270c453}</ProjectGuid>
+    <RootNamespace>Day09MirageMaintenance1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Day07CamelCards2</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -139,7 +138,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Day7CamelCards2.cpp" />
+    <ClCompile Include="Day09MirageMaintenance1.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt" />

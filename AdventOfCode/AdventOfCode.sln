@@ -27,13 +27,15 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day06WaitForIt1", "Day06Wai
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day06WaitForIt2", "Day06WaitForIt2\Day06WaitForIt2.vcxproj", "{CF3B0E97-F8C3-4578-A744-FEC5B8153F0D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day7CamelCards1", "Day7CamelCards1\Day7CamelCards1.vcxproj", "{42402EF1-FB3F-4F4A-9735-75B97CAD00CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day07CamelCards1", "Day7CamelCards1\Day7CamelCards1.vcxproj", "{42402EF1-FB3F-4F4A-9735-75B97CAD00CA}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day7CamelCards2", "Day7CamelCards2\Day7CamelCards2.vcxproj", "{21A104C4-A926-4C7E-BC6D-DA472023FE79}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day07CamelCards2", "Day7CamelCards2\Day7CamelCards2.vcxproj", "{21A104C4-A926-4C7E-BC6D-DA472023FE79}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day8HauntedWasteland1", "Day8HauntedWasteland1\Day8HauntedWasteland1.vcxproj", "{E0A05E6F-482B-4A4A-A868-F41B75FF305B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day08HauntedWasteland1", "Day8HauntedWasteland1\Day8HauntedWasteland1.vcxproj", "{E0A05E6F-482B-4A4A-A868-F41B75FF305B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day8HauntedWasteland2", "Day8HauntedWasteland2\Day8HauntedWasteland2.vcxproj", "{3588E045-070B-483A-9A8D-9A348AD7703B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day08HauntedWasteland2", "Day8HauntedWasteland2\Day8HauntedWasteland2.vcxproj", "{3588E045-070B-483A-9A8D-9A348AD7703B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day09MirageMaintenance1", "Day09MirageMaintenance1\Day09MirageMaintenance1.vcxproj", "{66CBC03D-97F6-4217-A75D-C9532270C453}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +173,14 @@ Global
 		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x64.Build.0 = Release|x64
 		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x86.ActiveCfg = Release|Win32
 		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x86.Build.0 = Release|Win32
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Debug|x64.ActiveCfg = Debug|x64
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Debug|x64.Build.0 = Debug|x64
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Debug|x86.ActiveCfg = Debug|Win32
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Debug|x86.Build.0 = Debug|Win32
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Release|x64.ActiveCfg = Release|x64
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Release|x64.Build.0 = Release|x64
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Release|x86.ActiveCfg = Release|Win32
+		{66CBC03D-97F6-4217-A75D-C9532270C453}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
