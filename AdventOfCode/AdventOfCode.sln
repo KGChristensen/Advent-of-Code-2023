@@ -33,6 +33,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day7CamelCards2", "Day7Came
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day8HauntedWasteland1", "Day8HauntedWasteland1\Day8HauntedWasteland1.vcxproj", "{E0A05E6F-482B-4A4A-A868-F41B75FF305B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Day8HauntedWasteland2", "Day8HauntedWasteland2\Day8HauntedWasteland2.vcxproj", "{3588E045-070B-483A-9A8D-9A348AD7703B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -161,6 +163,14 @@ Global
 		{E0A05E6F-482B-4A4A-A868-F41B75FF305B}.Release|x64.Build.0 = Release|x64
 		{E0A05E6F-482B-4A4A-A868-F41B75FF305B}.Release|x86.ActiveCfg = Release|Win32
 		{E0A05E6F-482B-4A4A-A868-F41B75FF305B}.Release|x86.Build.0 = Release|Win32
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Debug|x64.ActiveCfg = Debug|x64
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Debug|x64.Build.0 = Debug|x64
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Debug|x86.ActiveCfg = Debug|Win32
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Debug|x86.Build.0 = Debug|Win32
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x64.ActiveCfg = Release|x64
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x64.Build.0 = Release|x64
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x86.ActiveCfg = Release|Win32
+		{3588E045-070B-483A-9A8D-9A348AD7703B}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
